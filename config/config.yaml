@@ -1,0 +1,18 @@
+llms:
+  default: "openai_chat"
+  options:
+    openai_chat:
+      type: "openai_chat"
+      models:
+        fast_model:
+          model: "gpt-3.5-turbo"
+          max_history_words: 10000
+          max_words_per_message: 500
+          stream: true
+          max_retry: 10
+        smart_model:
+          model: "gpt-4o"
+          max_history_words: 10000
+          max_words_per_message: 500
+          stream: true
+          max_retry: 10
